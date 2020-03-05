@@ -369,7 +369,7 @@ summary {
 </div>
 
 
-<pre class="r"><code>ggplot(iris, aes(x=Sepal.Length))+
+<pre class="r"><code>ggplot(iris, aes(x=Sepal.Length, fill= Species))+
   geom_histogram()+
   labs()-&gt;irisplot
 ggsave(&quot;practice_plot.png&quot;, irisplot)</code></pre>

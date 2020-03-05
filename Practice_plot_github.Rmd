@@ -12,8 +12,9 @@ library(tidyverse)
 
 
 ```{r , iris_plot}
-ggplot(iris, aes(x=Sepal.Length))+
+ggplot(iris, aes(x=Sepal.Length, fill= Species))+
   geom_histogram()+
   labs()->irisplot
 ggsave("practice_plot.png", irisplot)
+
 ```

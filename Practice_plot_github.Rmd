@@ -1,0 +1,19 @@
+---
+title: "Practice Plotting and Github"
+author: "Jimmy Moscarello"
+date: "3/5/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+
+```{r , iris_plot}
+ggplot(iris, aes(x=Sepal.Length))+
+  geom_histogram()+
+  labs()->irisplot
+ggsave("practice_plot.png", irisplot)
+```
